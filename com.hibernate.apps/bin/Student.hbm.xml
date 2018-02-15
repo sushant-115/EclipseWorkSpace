@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 29, 2017 1:44:33 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.hibernate.apps">
+    <class name="com.hibernate.apps.Student" table="STUDENT">
+        <id name="sId" type="int" access="field">
+            <column name="SID" />
+            <generator class="sequence" />
+        </id>
+        <property name="sName" type="java.lang.String" access="field">
+            <column name="SNAME" />
+        </property>
+        <property name="sAge" type="int" access="field">
+            <column name="SAGE" />
+        </property>
+    </class>
+</hibernate-mapping>

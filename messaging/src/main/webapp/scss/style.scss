@@ -1,0 +1,35 @@
+$size:15vmin;
+$innerSize:$size/5;
+
+body {
+  display:grid;
+  place-content:center;
+  height:100vh;
+  background-color:#212121;
+}
+
+#loader {
+  display:grid;
+  grid-template-columns: repeat(5,1fr);
+  animation: rotate 60s ease infinite;
+  
+  .el {
+    background-color:#FFCA28;
+    opacity:0.1;
+    width:$innerSize;
+    height:$innerSize;
+    animation: pulse 1.5s ease infinite;
+    will-change:transform;
+  }
+}
+
+@keyframes rotate {
+  0%{transform: rotateZ(0)}
+  100%{transform: rotateZ(360deg)}
+}
+
+@keyframes pulse {
+  0%{transform:scale(0) rotateZ(0)}
+  50%{transform:scale(5) rotateZ(45deg);}
+  100%{transform:scale(0) rotateZ(90deg)}
+}

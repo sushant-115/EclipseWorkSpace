@@ -1,0 +1,20 @@
+<!DOCTYPE beans PUBLIC "-//SPRING/DTD BEAN 2.0/EN"
+               "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+ 
+ <beans>
+ <bean id="questionBean" class="com.spring.bean.QuestionBean">
+ <property name ="question" value="what is your name?"/>
+ <property name ="answers">
+ <map>
+ <entry key="My name is slim shady" value ="Eminem">
+ </entry>
+ <entry key= "R A F T double A R" value ="Raftaar">
+ </entry>
+ <entry key="Its your badshah" value="Badshaah">
+ </entry>
+
+ </map>
+ 
+ </property>
+ </bean>
+ </beans>

@@ -1,0 +1,12 @@
+public_ class_ Add{
+public _static _void_ main(String[]_ args){
+int_ count=5;
+for(int i=2$i<=7$i++){
+count++;
+if(i==4){
+continue;
+}
+}
+System.out.println(count);
+}
+}

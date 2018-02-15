@@ -1,0 +1,30 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <context-param>
+  <param-name>file-audio</param-name>
+<param-value>E:/demo</param-value>
+  </context-param>
+  <servlet>
+  	<servlet-name>Audioservlet</servlet-name>
+  	<display-name>Audioservlet</display-name>
+  	<description></description>
+  	<servlet-class>audio.controller.Audioservlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AudioServlet</servlet-name>
+  	<display-name>AudioServlet</display-name>
+  	<description></description>
+  	<servlet-class>audio.controller.AudioServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Audioservlet</servlet-name>
+  	<url-pattern>/Audioservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AudioServlet</servlet-name>
+  	<url-pattern>/AudioServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

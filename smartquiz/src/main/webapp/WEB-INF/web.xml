@@ -1,0 +1,21 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+ 
+  <servlet>
+  	<servlet-name>SmartQuizServlet</servlet-name>
+  	<display-name>SmartQuizServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.sushant.controller.SmartQuizServlet</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+  	<servlet-name>SmartQuizServlet</servlet-name>
+  	<url-pattern>/submit</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+<welcome-file></welcome-file>  
+  </welcome-file-list>
+</web-app>
